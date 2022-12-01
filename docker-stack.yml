@@ -25,7 +25,6 @@ services:
       - 9090:9090
     depends_on:
       - cadvisor
-#      - pushgateway
     networks:
       - monitor-net
     deploy:
