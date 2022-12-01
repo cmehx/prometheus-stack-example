@@ -91,4 +91,4 @@ docker swarm join --token <token> <ip>:<port>
 
 Few moments later you will be able to see the 2 new container instances on
 grafana.
-Both containers exposes metrics from their http://<master ip>:<contaier port>/metrics
+Both containers exposes metrics from their http://[master ip]:[contaier port]/metrics
