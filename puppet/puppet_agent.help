@@ -1,0 +1,17 @@
+SET UP NEW VM WITH PUPPET AGENT
+
+
+# Récuperer le .deb de la version 7 de puppet
+wget https://apt.puppetlabs.com/puppet7-release-focal.deb
+# Installer le .deb
+sudo dpkg -i puppet7-release-focal.deb
+# Mettre à jour les repo
+sudo apt update
+#Installer l'agent puppet
+sudo apt install puppet-agent
+
+source /etc/profile.d/puppet-agent.sh
+
+puppet --version
+
+slave depo : git@gitlab.com:mehhlol/puppet-manifests.git

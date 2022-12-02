@@ -1,0 +1,8 @@
+
+
+puppet apply /path/to/file_hello.pp
+https://eyassir.notion.site/Puppet-1-a6bfe7adcc934b2da9f703cbdd95b426
+
+puppet apply --noop manifests/user.pp # to simulate
+puppet apply --noop --show_diff /path/to/manifest_file.pp # to simulate with diff
+/etc/puppetlabs/code/environments/production/manifests/

@@ -1,0 +1,13 @@
+EXAMPLE TO JOIN SWARM AS PUPPET AGENT USING MANIFEST
+
+puppet module install puppetlabs-docker --version 6.0.0
+
+class { 'docker':
+  version => '17.09.0~ce-0~debian',
+}
+
+docker::swarm {'cluster_worker':
+  join           => true,
+  manager_ip     => 'swarm manager ip adress',
+  token          => 'token from swarm init'
+}
