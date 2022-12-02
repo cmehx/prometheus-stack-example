@@ -7,6 +7,11 @@ A prometheus stack example with grafana using node exporter
 - Docker
 - Swarm mode
 
+##### optional for example
+
+- Vagrant
+- Puppet
+
 ## Setup
 
 ```
@@ -54,6 +59,11 @@ http://localhost:9093/#/alerts
 
 Joining the swarm as a node/worker will replicate node-exporter and cadvisor on
 this node.
+
+#### Puppet example
+
+Using a puppet master to apply a manifest that will make agent join the swarm
+Instruction are in the puppet folder
 
 #### Vagrant example
 
