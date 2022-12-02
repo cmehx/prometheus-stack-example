@@ -79,7 +79,7 @@ You can use the vagrant file running:
 
 ```
 vagrant up
-vagrant ssh master
+vagrant ssh worker
 ```
 
 install docker
