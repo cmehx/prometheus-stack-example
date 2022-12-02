@@ -14,12 +14,19 @@ A prometheus stack example with grafana using node exporter
 
 ## Setup
 
+Create a swarm manager
+
 ```
 docker swarm init
 ```
 
+To deploy the stack
 ```
-./boot.sh
+./start.sh
+```
+To stop the stack
+```
+./stop.sh
 ```
 
 The node-exporter and Cadvisor are available globally
